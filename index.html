@@ -11,7 +11,7 @@
 <body class="bg-gray-100 text-gray-900">
 
     <!-- Container -->
-    <div class="max-w-5xl mx-auto p-4 md:p-8 bg-white shadow rounded-lg">
+    <div class="max-w-2xl mx-auto p-4 md:p-8 bg-white shadow rounded-lg">
 
         <!-- Header + Timer -->
         <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 border-b pb-4">
@@ -110,60 +110,175 @@
                     <br>
                     Racket customisation and modification have pushed the standards of the game to greater levels that
                     few could have anticipated in the days of natural strings and heavy, wooden frames, and it's
-                    exciting to see what further developments there will be in the future.</p>
+                    exciting to see what further developments there will be in the future.
+                </p>
                 <!-- qolgan barcha passage matnini shu yerga joylashtirasan -->
             </div>
         </div>
 
-        <!-- Questions -->
-        <div class="mt-8 space-y-8">
-            <!-- Questions 1-7 -->
-            <div>
-                <h3 class="font-semibold">Questions 1–7</h3>
-                <p class="text-sm text-gray-700 mb-4">Do the following statements agree with the information given in
-                    Reading Passage 1? Write <b>TRUE</b>, <b>FALSE</b>, or <b>NOT GIVEN</b>.</p>
-                <div class="space-y-4">
-                    <div class="flex items-start gap-2">
-                        <span>1.</span>
-                        <p class="flex-1">People had expected Andy Murray to become the world's top tennis player for at
-                            least five years before 2016.</p>
-                        <input type="text"
-                            class="border-b border-gray-400 w-24 outline-none text-rose-700 font-semibold">
+        <aside class="bg-white border rounded-lg shadow-sm p-5 mt-8 sticky top-6 h-max">
+            <h4 class="font-semibold mb-2">Questions 1–7</h4>
+            <p class="text-xs text-gray-600 mb-3">Do the following statements agree with the information given in
+                Reading Passage 1? Choose <strong>TRUE</strong>, <strong>FALSE</strong> or <strong>NOT GIVEN</strong>.
+            </p>
+
+            <form id="qForm" class="space-y-3 text-sm">
+                <!-- question template -->
+                <fieldset class="border border-gray-100 p-3 rounded">
+                    <legend class="font-medium">1. People had expected Andy Murray to become the world's top tennis
+                        player for at least five years before 2016.</legend>
+                    <div class="mt-2 flex gap-2">
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="q1" value="TRUE" class="form-radio h-4 w-4 text-rose-600" />
+                            <span>TRUE</span>
+                        </label>
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="q1" value="FALSE" class="form-radio h-4 w-4 text-rose-600" />
+                            <span>FALSE</span>
+                        </label>
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="q1" value="NOT GIVEN" class="form-radio h-4 w-4 text-rose-600" />
+                            <span>NOT GIVEN</span>
+                        </label>
                     </div>
-                    <div class="flex items-start gap-2">
-                        <span>2.</span>
-                        <p class="flex-1">The change that Andy Murray made to his rackets attracted a lot of attention.
+                </fieldset>
+
+                <fieldset class="border border-gray-100 p-3 rounded">
+                    <legend class="font-medium">2. The change that Andy Murray made to his rackets attracted a lot of
+                        attention.</legend>
+                    <div class="mt-2 flex gap-2">
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="q2" value="TRUE" class="form-radio h-4 w-4 text-rose-600" />
+                            <span>TRUE</span>
+                        </label>
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="q2" value="FALSE" class="form-radio h-4 w-4 text-rose-600" />
+                            <span>FALSE</span>
+                        </label>
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="q2" value="NOT GIVEN" class="form-radio h-4 w-4 text-rose-600" />
+                            <span>NOT GIVEN</span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="border border-gray-100 p-3 rounded">
+                    <legend class="font-medium">3. Most of the world's top players take a professional racket stringer
+                        on tour with them.</legend>
+                    <div class="mt-2 flex gap-2">
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="q3" value="TRUE" class="form-radio h-4 w-4 text-rose-600" />
+                            <span>TRUE</span>
+                        </label>
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="q3" value="FALSE" class="form-radio h-4 w-4 text-rose-600" />
+                            <span>FALSE</span>
+                        </label>
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="q3" value="NOT GIVEN" class="form-radio h-4 w-4 text-rose-600" />
+                            <span>NOT GIVEN</span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="border border-gray-100 p-3 rounded">
+                    <legend class="font-medium">4. Mike and Bob Bryan use rackets that are light in comparison to the
+                        majority of rackets.</legend>
+                    <div class="mt-2 flex gap-2">
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="q4" value="TRUE" class="form-radio h-4 w-4 text-rose-600" />
+                            <span>TRUE</span>
+                        </label>
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="q4" value="FALSE" class="form-radio h-4 w-4 text-rose-600" />
+                            <span>FALSE</span>
+                        </label>
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="q4" value="NOT GIVEN" class="form-radio h-4 w-4 text-rose-600" />
+                            <span>NOT GIVEN</span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="border border-gray-100 p-3 rounded">
+                    <legend class="font-medium">5. Werner Fischer played with a spaghetti-strung racket that he designed
+                        himself.</legend>
+                    <div class="mt-2 flex gap-2">
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="q5" value="TRUE" class="form-radio h-4 w-4 text-rose-600" />
+                            <span>TRUE</span>
+                        </label>
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="q5" value="FALSE" class="form-radio h-4 w-4 text-rose-600" />
+                            <span>FALSE</span>
+                        </label>
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="q5" value="NOT GIVEN" class="form-radio h-4 w-4 text-rose-600" />
+                            <span>NOT GIVEN</span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="border border-gray-100 p-3 rounded">
+                    <legend class="font-medium">6. The weather can affect how professional players adjust the strings on
+                        their rackets.</legend>
+                    <div class="mt-2 flex gap-2">
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="q6" value="TRUE" class="form-radio h-4 w-4 text-rose-600" />
+                            <span>TRUE</span>
+                        </label>
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="q6" value="FALSE" class="form-radio h-4 w-4 text-rose-600" />
+                            <span>FALSE</span>
+                        </label>
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="q6" value="NOT GIVEN" class="form-radio h-4 w-4 text-rose-600" />
+                            <span>NOT GIVEN</span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="border border-gray-100 p-3 rounded">
+                    <legend class="font-medium">7. It was believed that the change Pete Sampras made to his rackets
+                        contributed to his strong serve.</legend>
+                    <div class="mt-2 flex gap-2">
+                        <label class="flex items-center gap-2"> 
+                            <input type="radio" name="q7" value="TRUE" class="form-radio h-4 w-4 text-rose-600" />
+                            <span>TRUE</span>
+                        </label>
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="q7" value="FALSE" class="form-radio h-4 w-4 text-rose-600" />
+                            <span>FALSE</span>
+                        </label>
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="q7" value="NOT GIVEN" class="form-radio h-4 w-4 text-rose-600" />
+                            <span>NOT GIVEN</span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <!-- Questions 8-13 -->
+                <div>
+                    <h3 class="font-semibold">Questions 8–13</h3>
+                    <p class="text-sm text-gray-700 mb-4">Complete the notes below. Choose <b>ONE WORD ONLY</b> from the
+                        passage for each answer.</p>
+                    <div class="space-y-4">
+                        <p>8. Mike and Bob Bryan made changes to the types of <input type="text"
+                                class="border-b border-gray-400 w-32 outline-none text-rose-700 font-semibold"> their
+                            racket
+                            frames.</p>
+                        <p>9. Players were not allowed to use the spaghetti-strung racket because of the amount of
+                            <input type="text"
+                                class="border-b border-gray-400 w-32 outline-none text-rose-700 font-semibold">
+                            it created.
                         </p>
-                        <input type="text"
-                            class="border-b border-gray-400 w-24 outline-none text-rose-700 font-semibold">
+                        <!-- qolgan 10–13 shu tartibda -->
                     </div>
-                    <!-- shu tartibda 7gacha yoziladi -->
                 </div>
-            </div>
-
-            <!-- Questions 8-13 -->
-            <div>
-                <h3 class="font-semibold">Questions 8–13</h3>
-                <p class="text-sm text-gray-700 mb-4">Complete the notes below. Choose <b>ONE WORD ONLY</b> from the
-                    passage for each answer.</p>
-                <div class="space-y-4">
-                    <p>8. Mike and Bob Bryan made changes to the types of <input type="text"
-                            class="border-b border-gray-400 w-32 outline-none text-rose-700 font-semibold"> their racket
-                        frames.</p>
-                    <p>9. Players were not allowed to use the spaghetti-strung racket because of the amount of <input
-                            type="text" class="border-b border-gray-400 w-32 outline-none text-rose-700 font-semibold">
-                        it created.</p>
-                    <!-- qolgan 10–13 shu tartibda -->
-                </div>
-            </div>
-        </div>
-
-        <!-- Submit Button -->
-        <div class="mt-8">
-            <button class="bg-rose-700 text-white px-6 py-2 rounded hover:bg-rose-800">Submit Answers</button>
-        </div>
+                <button class="bg-rose-700 text-white px-6 py-2 rounded hover:bg-rose-800">Submit Answers</button>
     </div>
 
-<script src="./timerscript.js"></script>
+    <script src="./timerscript.js"></script>
 </body>
+
 </html>
